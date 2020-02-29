@@ -97,6 +97,10 @@ app.post('/api/v1/users/auth/sign_in', function (req, res) {
     }
 });
 
+app.get('/', function (req, res) {
+    res.send({ "success": true, });
+});
+
 app.get('/api/v1/enterprises', function (req, res) {
     if (validateHeaders(req, res)) {
         var name = req.query.name;
