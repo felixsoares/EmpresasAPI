@@ -8,7 +8,7 @@ Para instalar e deixar a API rodando é muito simples :) so precisa de três com
 
 ```
 git clone https://github.com/felixsoares/EmpresasAPI.git
-cd empresasas
+cd empresas
 npm start
 ```
 
