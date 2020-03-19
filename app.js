@@ -80,7 +80,7 @@ app.post('/api/v1/users/auth/sign_in', function (req, res) {
                 "Senha menor que 4 caracteres"
             ]
         });
-    } else if (email == "testeapple@ioasys.com.br" && password == "12341234") {
+    } else if ((email == "testeapple@ioasys.com.br" || email == "testeapple@empresa.com.br") && password == "12341234") {
         res.send({
             "success": true,
             "accesstoken": constants.ACCESSTOKEN,
